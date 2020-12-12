@@ -21,7 +21,7 @@ menu:
     icon: fas fa-archive
   採用情報:
     url: /employment
-    icon: fas fa-comments
+    icon: fas fa-bookmark
   アクセス:
     url: /access
     icon: fas fa-comments

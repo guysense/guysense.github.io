@@ -8,7 +8,7 @@ configRoot = (configRoot === null || configRoot === undefined || configRoot === 
         <% if (theme.logo !== undefined && theme.logo.length > 0) { %>
         <img src="<%- theme.jsDelivr.url %><%- url_for(theme.logo) %>" class="logo-img circle responsive-img">
         <% } %>
-        <div class="logo-name"><%= config.title %></div>
+        <div class="logo-name"><!--%= config.title %--><br/></div>
         <div class="logo-desc">
             <% if (config.description && config.description.length > 0) { %>
             <%= config.description %>

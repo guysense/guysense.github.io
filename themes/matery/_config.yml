@@ -13,7 +13,7 @@ menu:
   #Archives:
   #  url: /archives
   #  icon: fas fa-archive
-  about:
+  About:
     url: /company
     icon: fas fa-user-circle
   Business:

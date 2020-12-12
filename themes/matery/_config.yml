@@ -13,7 +13,7 @@ menu:
   #Archives:
   #  url: /archives
   #  icon: fas fa-archive
-  About:
+  会社概要:
     url: /company
     icon: fas fa-user-circle
   事業内容:
@@ -22,7 +22,7 @@ menu:
   採用情報:
     url: /employment
     icon: fas fa-comments
-  お問合せ:
+  アクセス:
     url: /access
     icon: fas fa-comments
   #Friends:

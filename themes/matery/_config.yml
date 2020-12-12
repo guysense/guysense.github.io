@@ -13,16 +13,16 @@ menu:
   #Archives:
   #  url: /archives
   #  icon: fas fa-archive
-  About:
+  会社概要:
     url: /company
     icon: fas fa-user-circle
-  Business:
+  事業内容:
     url: /business
     icon: fas fa-archive
-  Employment:
+  採用情報:
     url: /employment
     icon: fas fa-comments
-  Access:
+  お問合せ:
     url: /access
     icon: fas fa-comments
   #Friends:
@@ -78,7 +78,7 @@ dream:
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
@@ -145,7 +145,7 @@ socialLink:
   qq: # 1181062873
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
-  rss: true # true、false
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.

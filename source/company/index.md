@@ -1,11 +1,11 @@
 ---
-title: company
-catalog: true
-comments: true
-indexing: true
+title: 会社概要
+catalog: false
+comments: false
+indexing: false
 header-img: ../../../../img/default.jpg
 top: false
-tocnum: true
+tocnum: false
 date: 2020-12-12 15:35:46
 subtitle:
 tags:

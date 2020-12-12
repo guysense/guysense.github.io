@@ -13,11 +13,7 @@ menu:
   #Archives:
   #  url: /archives
   #  icon: fas fa-archive
-<<<<<<< HEAD
-  会社概要:
-=======
-  about:
->>>>>>> 62596efb050819e4e15259ee74aa8ecee6dae548
+  About:
     url: /company
     icon: fas fa-user-circle
   事業内容:

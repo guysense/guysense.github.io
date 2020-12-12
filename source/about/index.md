@@ -1,14 +1,18 @@
 ---
 layout: "about"
-title: "About"
-date: 2016-04-21 04:48:33
-description: "When you get up early and work hard, when you stay up late, when you feel too tired to stand up again, but still support the night when you get up, that is the power of dreams."
+title: "会社概要"
+date: 2020-11-24 04:48:33
+description: "ともにみらいを拓くITパートナーに"
 header-img: "img/header_img/Iron-Man-3.jpg"
 comments: true
 ---
 
-> The scenery we often see is that a person always looks up and envy the happiness of others, but finds that he is being looked up and envious. In fact, everyone is happy, but your happiness is often in the eyes of others.
-> &nbsp;
-> Life is a one-way trip. Even if there are some regrets, we have no chance to start all over again. It is better to smile and cherish the future than to confuse the past, because life is not as if.
-> &nbsp;
-> Don't think too much, just do it now.
+|||
+|---:|----------|
+|社名:|株式会社蓋世技術|
+|設立|2020年11月|
+|代表取締役|張海栄|
+|資本金|350万円|
+|所在地|〒120-0034　東京都足立区千住 1-4-1 東京芸術センター 10 階|
+|業務内容|システムエンジニアリングサービス（SES） <br> システムインテグレーション（SI） <br>システムエンジニアリング< br>オフショア事業支援 <br>情報通信システムのコンサルティング<br>コンピュータネットワークの企画および開発 <br> 情報通信システムの企画、開発|
+|連絡先|XXX|

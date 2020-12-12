@@ -6,13 +6,13 @@
 title: 株式会社蓋世技術
 subtitle: 飽きなく品質を追求する
           
-author: Dusign
-language: en
-timezone:
+author: 
+language: ja
+timezone: Asia/Tokyo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://dusign.net       # Note: don't forget to modify the CNAME file to your url
+url: https://www.guysense.co.jp     # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -20,19 +20,19 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Hexo-theme-snail
-email: hexo-theme-snail@mail.com
-description: "A hexo theme"
-keyword: "dusign, hexo-theme-snail"
+SEOTitle: guysense
+email: guysense2020[at_mark]mail.com
+description: ""
+keyword: "guysense, gaisei technology, 株式会社蓋世技術, 蓋世技術"
 header-img: img/header_img/home-bg-1-dark.jpg
 signature: true #show signature
 signature-img: img/signature/dusign.png
 
 # SNS settings
-github_username:    dusign
-twitter_username:   dusignr
-facebook_username:  Gang Du
-zhihu_username: dusignr
+github_username:    guysense
+twitter_username:   guysense
+facebook_username:  guysense
+zhihu_username: guysense
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -46,7 +46,7 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                      # whether or not using Sidebar.
-sidebar-about-description: "Welcome to visit, I'm Dusign!"
+sidebar-about-description: "ようこそ、蓋世技術へ!"
 sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 - search
@@ -78,15 +78,16 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 ## Friends
 friends: [
-    {
-        title: "Dusign's Blog",
-        href: "https://blog.csdn.net/d_Nail"
-    },{
-        title: "Dusign's Web",
-        href: "#"
-    },{
+##    {
+##        title: "Dusign's Blog",
+##        href: "https://blog.csdn.net/d_Nail"
+##    },{
+##        title: "Dusign's Web",
+##       href: "#"
+##    },
+       {
         title: "Dusign's Github",
-        href: "https://github.com/dusign"
+        href: "https://github.com/guysense"
     },{
         title: "Other",
         href: "#"
@@ -164,7 +165,7 @@ markdown:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: snail
+theme: matery
 
 #sitemap
 sitemap:
@@ -203,14 +204,14 @@ comment:
 ### netease; qqkg;
 ### if your `library` is `qqkg`, please set `music` as the song url
 music:
-  enable: true
+  enable: false
   library: netease
   music: https://kg.qq.com/node/play?s=7deFpz7Z26Jmv7di&g_f=share_html
 
 # Tip
 tip:
   enable: true
-  copyright: This is copyright.
+  copyright: All rights reservred. @蓋世技術
   content: false
 
 # Background effects
@@ -227,7 +228,7 @@ bg_effects:
     count: 99
   mouse_click:
     enable: true
-    content: '"🌱","just do it","🍀"'
+    content: '"🌱","ともに未来を拓くITパートナー","🍀"'
     color: '"rgb(121,93,179)"
           ,"rgb(76,180,231)"
           ,"rgb(184,90,154)"'
@@ -248,5 +249,5 @@ visitor:
 
 # Chinese Blog
 chinese_blog:
-  enable: true
+  enable: false
   url: YOUR_CHINESE_BLOG_URL

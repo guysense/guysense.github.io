@@ -1,5 +1,5 @@
 ---
-title: 事業範囲
+title: 事業内容
 catalog: false
 comments: false
 indexing: false

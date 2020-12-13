@@ -1,5 +1,5 @@
 ---
-title: 人材募集
+title: 採用情報
 catalog: false
 comments: false
 indexing: false
@@ -14,28 +14,29 @@ categories:
 ## 仕事内容
 ---------------	
 #### アプリケーション開発エンジニア
-- IOS/Android
+- iOS/Android
 - Unity
-- JAVA
+- Java
 - PHP
 - Javascript
 - HTML
 - Python
 - Ruby
-- NET(ASP、C#)
+- .Net(ASP.Net、C#)
 - C、C++、VC++
 - 設計、開発、テスト
 
 #### サーバーサイドエンジニア
 - UNIX (AIX、SOLARIS、HP-UX）
-- LINUX（CENTOS）
-- WINDOWS
+- LINUX（CentOS,RHEL,Ubuntu）
+- Windows
 - サーバ設計・構築・管理
 
 #### DBA
 - ORACLE
 - DB2
-- MSSQL
+- Microsoft SQL Server
+- MySQL
 - データベース設計・構築・管理・Tuning
 
 #### ネットワーク管理者
@@ -83,4 +84,4 @@ categories:
 - ※適性検査を行う場合もあります。
 
 ### 応募方法
-- career@todo.com までメールください。
+- career☺︎guysense.co.jp までメールください。

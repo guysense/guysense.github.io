@@ -3,7 +3,8 @@ title: 事業内容
 catalog: false
 comments: false
 indexing: false
-header-img: ../../../../img/default.jpg
+#header-img: ../../../../img/default.jpg
+img: ../../../../images/business.jpg
 top: false
 tocnum: false
 date: 2020-12-12 14:40:02

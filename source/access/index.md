@@ -3,8 +3,10 @@ title: アクセス
 catalog: false
 comments: false
 indexing: false
-header-img: ../../../../img/default.jpg
+#header-img: ../../../../img/company.jpg
+img: ../../../../images/access.jpg
 toc: false
+top: false
 tocnum: false
 date: 2020-12-12 13:47:31
 subtitle:

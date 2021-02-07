@@ -3,9 +3,11 @@ title: 採用情報
 catalog: false
 comments: false
 indexing: false
-header-img: ../../../../img/default.jpg
+#header-img: ../../../../img/default.jpg
+img: ../../../../images/employ.jpg
 top: false
-tocnum: false
+toc: true
+tocnum: 1
 date: 2020-12-12 16:49:55
 subtitle: あたなの加入をお待ちしております。
 tags:

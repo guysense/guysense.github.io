@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
-Allow: /home/
+Allow: /company/
+Allow: /business/
+Allow: /employment
 Allow: /archives/
+Allow: /access/
 Allow: /tags/
 
 Disallow: /js/

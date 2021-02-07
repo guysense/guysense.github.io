@@ -4,7 +4,7 @@ catalog: false
 comments: false
 indexing: false
 header-img: ../../../../img/default.jpg
-top: false
+toc: false
 tocnum: false
 date: 2020-12-12 13:47:31
 subtitle:

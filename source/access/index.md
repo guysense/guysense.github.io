@@ -4,7 +4,7 @@ catalog: false
 comments: false
 indexing: false
 #header-img: ../../../../img/company.jpg
-img: ../../../../images/access.jpg
+img: /images/access.jpg
 toc: false
 top: false
 tocnum: false

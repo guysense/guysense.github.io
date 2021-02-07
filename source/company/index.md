@@ -3,7 +3,7 @@ title: 会社概要
 catalog: false
 comments: false
 indexing: false
-img: ../../../../images/company.jpg
+img: /images/company.jpg
 toc: false
 top: false
 tocnum: 1

@@ -1,659 +1,224 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="会社概要, 株式会社蓋世技術">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社蓋世技術の会社概要。社名・設立・代表・所在地・業務内容など。">
     <title>会社概要 | 株式会社蓋世技術</title>
     <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+    <style>
+        .table-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .table-card-header {
+            background: var(--bg-alt);
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .table-card-header h3 {
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+        .info-table th { width: 160px; }
+    </style>
+</head>
 <body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo_long.png" class="logo-img" alt="LOGO">
-                    
-                    <!--span-- class="logo-span">株式会社蓋世技術</!--span-->
-                    <span class="logo-span"></span>                </a>
-            </div>
-            
 
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/company" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>会社概要</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/business" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>事業内容</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/employment" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>採用情報</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/access" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>アクセス</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="検索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo_long.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name"><!--%= config.title %--><br/></div>
-        <div class="logo-desc">
-            
-            your vision, our passion.
-            
-        </div>
+<!-- ── Nav ── -->
+<nav class="nav nav-solid" id="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo"><img src="/medias/logo_long.png" alt="株式会社蓋世技術"></a>
+        <ul class="nav-links">
+            <li><a href="/company" style="color:var(--primary)!important;font-weight:700;">会社概要</a></li>
+            <li><a href="/business">事業内容</a></li>
+            <li><a href="/employment">採用情報</a></li>
+            <li><a href="/access">アクセス</a></li>
+            <li><a href="/#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
+</nav>
 
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/company" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			会社概要
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/business" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			事業内容
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/employment" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			採用情報
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/access" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			アクセス
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/company.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">会社概要</h1>
-                </div>
-            </div>
-        </div>
+<div class="nav-drawer" id="drawer">
+    <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="nav-drawer-panel">
+        <button class="nav-drawer-close" id="drawerClose">✕</button>
+        <a href="/company"    onclick="closeDrawer()" style="color:var(--primary);">会社概要</a>
+        <a href="/business"   onclick="closeDrawer()">事業内容</a>
+        <a href="/employment" onclick="closeDrawer()">採用情報</a>
+        <a href="/access"     onclick="closeDrawer()">アクセス</a>
+        <a href="/#contact"   onclick="closeDrawer()" style="color:var(--primary);">お問い合わせ</a>
     </div>
 </div>
 
+<!-- ── Page Hero ── -->
+<section class="page-hero">
+    <div class="page-hero-inner">
+        <nav class="breadcrumb">
+            <a href="/">ホーム</a>
+            <span>›</span>
+            <span style="color:rgba(255,255,255,.7);">会社概要</span>
+        </nav>
+        <p>株式会社蓋世技術の基本情報・所在地・事業内容についてご紹介します。</p>
+    </div>
+</section>
 
-
-
-<main class="container content">
-
-    
-    <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                          <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
-                          </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                </div>
+<!-- ── Main Content ── -->
+<section class="sec" style="background:var(--bg-alt);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow" style="text-align:center;">基本情報</p>
+        <h2 class="sec-title" style="text-align:center;">会社情報</h2>
+        <div class="sec-divider" style="margin:0 auto 2rem;"></div>
+        <div class="table-card fade-up">
+            <div class="table-card-header">
+                <h3>Company Details</h3>
             </div>
-
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>公開日:&nbsp;&nbsp;
-                    2020-12-12
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:right">カテゴリ</th>
-<th>詳細</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">社名:</td>
-<td>株式会社蓋世技術</td>
-</tr>
-<tr>
-<td style="text-align:right">設立</td>
-<td>2020年11月</td>
-</tr>
-<tr>
-<td style="text-align:right">代表取締役</td>
-<td>張海栄</td>
-</tr>
-<tr>
-<td style="text-align:right">資本金</td>
-<td>350万円</td>
-</tr>
-<tr>
-<td style="text-align:right">所在地</td>
-<td>〒120-0034　東京都足立区千住 1-4-1 東京芸術センター 10 階　　　　　　　　　　</td>
-</tr>
-<tr>
-<td style="text-align:right">業務内容</td>
-<td>システムエンジニアリングサービス（SES） <br> システムインテグレーション（SI） <br>システムエンジニアリング<br>オフショア事業支援 <br>情報通信システムのコンサルティング<br>コンピュータネットワークの企画および開発 <br> 情報通信システムの企画、開発</td>
-</tr>
-<tr>
-<td style="text-align:right">連絡先</td>
-<td>電　話：050-6862-9985<br>メール：info＠guysense.co.jp</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-                
-            </div>
-            <hr/>
-
-            
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
+            <table class="info-table">
+                <tbody>
+                    <tr>
+                        <th>社名</th>
+                        <td>株式会社蓋世技術<br><span style="font-size:.82rem;color:var(--text-light);">Guysense Technology Co., Ltd.</span></td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>2020年11月</td>
+                    </tr>
+                    <tr>
+                        <th>代表取締役</th>
+                        <td>張 海栄</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>350万円</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>
+                            〒120-0034<br>
+                            東京都足立区千住1-4-1<br>
+                            東京芸術センター 10階
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>業務内容</th>
+                        <td>
+                            システムエンジニアリングサービス（SES）<br>
+                            システムインテグレーション（SI）<br>
+                            オフショア事業支援<br>
+                            情報通信システムのコンサルティング<br>
+                            コンピュータネットワークの企画・開発<br>
+                            情報通信システムの企画・開発
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>連絡先</th>
+                        <td>
+                            電話：<a href="tel:050-6862-9985" style="color:var(--primary);">050-6862-9985</a><br>
+                            メール：<a href="mailto:info@guysense.co.jp" style="color:var(--primary);">info@guysense.co.jp</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+</section>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本編
+<!-- ── Mission ── -->
+<section class="sec" style="background:var(--bg-white);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">Mission</p>
+        <h2 class="sec-title">私たちのミッション</h2>
+        <div class="sec-divider"></div>
+        <div class="card-grid card-grid-3">
+            <div class="g-card fade-up">
+                <div class="g-card-icon ic-cyan">💡</div>
+                <span class="tag t-cyan">Quality</span>
+                <h3>品質への情熱</h3>
+                <p>飽きなく品質を追求する。コードの一行一行に誇りを持ち、お客様へ最高のプロダクトをお届けします。</p>
             </div>
-            <div class="card">
-                <a href="/company/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/company.jpg" class="responsive-img" alt="会社概要">
-                        
-                        <span class="card-title">会社概要</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
+            <div class="g-card fade-up delay-1">
+                <div class="g-card-icon ic-purple">🤝</div>
+                <span class="tag t-purple">Trust</span>
+                <h3>信頼のパートナー</h3>
+                <p>your vision, our passion. お客様のビジョンを自分たちのものとして捉え、共に成長するパートナーを目指します。</p>
+            </div>
+            <div class="g-card fade-up delay-2">
+                <div class="g-card-icon ic-pink">🌏</div>
+                <span class="tag t-pink">Global</span>
+                <h3>グローバルな視点</h3>
+                <p>日本と世界をつなぐオフショア事業支援を通じ、グローバルな技術力と人材ネットワークを活かします。</p>
             </div>
         </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本編&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/company/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/company.jpg" class="responsive-img" alt="会社概要">
-                        
-                        <span class="card-title">会社概要</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
     </div>
-</article>
+</section>
 
+<!-- ── CTA ── -->
+<div class="cta-strip">
+    <h2>お気軽にご相談ください</h2>
+    <p>プロジェクトのご相談・お見積りなど、いつでもお待ちしています。</p>
+    <a href="/#contact" class="btn-primary">
+        お問い合わせ
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
 </div>
 
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2020-2021</span>
-            
-            <span id="year">2020</span>
-            <a href="/about" target="_blank">Guysense Technology</a>
-            |&nbsp;Powered by&nbsp;<a href="https://www.guysense.co.jp/" target="_blank">蓋世技術</a>
-            |<!--&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>-->
-            <br>
-            
-            
-            
-            
-            
-            <br>
-            
-            <br>
-            
+<!-- ── Footer ── -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="/medias/logo_long.png" alt="株式会社蓋世技術">
+                <p>飽きなく品質を追求する技術企業。<br>your vision, our passion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <ul>
+                    <li><a href="/company">会社概要</a></li>
+                    <li><a href="/business">事業内容</a></li>
+                    <li><a href="/employment">採用情報</a></li>
+                    <li><a href="/access">アクセス</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>お問い合わせ</h4>
+                <ul>
+                    <li><a href="mailto:info@guysense.co.jp">info@guysense.co.jp</a></li>
+                    <li><a href="/access">〒 東京都足立区千住1-4-1</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col s12 m4 l4 social-link ">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+        <div class="footer-bottom">
+            <span>© 2020–2025 株式会社蓋世技術 All Rights Reserved.</span>
+            <span>Guysense Technology Co., Ltd.</span>
+        </div>
     </div>
 </footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;検索</span>
-            <input type="search" id="searchInput" name="s" placeholder="キーワードを入力ください"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
 <script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+document.getElementById('hamburger').addEventListener('click', function() { document.getElementById('drawer').classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
+(function() {
+    var els = document.querySelectorAll('.fade-up');
+    var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(function(el) { io.observe(el); });
+})();
 </script>
-
-    
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
-
 </html>

@@ -1,623 +1,1096 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="株式会社蓋世技術">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>株式会社蓋世技術</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社蓋世技術 — 飽きなく品質を追求するIT・AIソリューション企業。システム開発・Webアプリ・AI活用でお客様のビジョンを実現します。">
+    <meta name="keywords" content="株式会社蓋世技術, システム開発, AI, Webアプリ, ITコンサルティング">
+    <title>株式会社蓋世技術 — your vision, our passion.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+    <style>
+        /* ── Reset & Variables ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo_long.png" class="logo-img" alt="LOGO">
-                    
-                    <!--span-- class="logo-span">株式会社蓋世技術</!--span-->
-                    <span class="logo-span"></span>                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/company" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>会社概要</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/business" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>事業内容</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/employment" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>採用情報</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/access" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>アクセス</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="検索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo_long.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name"><!--%= config.title %--><br/></div>
-        <div class="logo-desc">
-            
-            your vision, our passion.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/company" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			会社概要
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/business" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			事業内容
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/employment" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			採用情報
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/access" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			アクセス
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                飽きなく品質を追求する
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['ようこそ、株式会社蓋世技術へ',''],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>詳細を読む
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
+        :root {
+            --primary:      #06b6d4;
+            --primary-dark: #0891b2;
+            --purple:       #7c3aed;
+            --purple-light: #a78bfa;
+            --pink:         #ec4899;
+            --pink-light:   #f9a8d4;
+            --dark:         #0d1b2a;
+            --text:         #1e293b;
+            --text-light:   #64748b;
+            --text-muted:   #94a3b8;
+            --bg-white:     #ffffff;
+            --bg-alt:       #f8fafc;
+            --border:       #e2e8f0;
+            --nav-h:        68px;
+            --r:            12px;
+            --shadow:       0 4px 24px rgba(0,0,0,0.07);
+            --shadow-lg:    0 16px 48px rgba(0,0,0,0.12);
         }
 
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
+        html { scroll-behavior: smooth; }
 
-        let carouselIntervalId;
-        
+        body {
+            font-family: 'Noto Sans JP', 'Inter', 'Yu Gothic', YuGothic, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-        function restartPlay() {
-            
-        };
+        a   { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        ul  { list-style: none; }
 
-        
-    });
-</script>
+        /* ── Navbar ── */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            height: var(--nav-h);
+            display: flex;
+            align-items: center;
+            padding: 0 2.5rem;
+            transition: background .35s, box-shadow .35s;
+        }
 
+        .nav.scrolled {
+            background: rgba(255,255,255,.96);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 1px 24px rgba(0,0,0,.06);
+        }
 
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-<main class="content">
+        .nav-logo img { height: 34px; width: auto; filter: brightness(0); }
 
-    
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.25rem;
+        }
 
-    
+        /* Light hero → links are dark from the start */
+        .nav-links a {
+            font-size: .875rem;
+            font-weight: 500;
+            color: var(--text);
+            letter-spacing: .02em;
+            transition: color .2s;
+        }
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/12/launch/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="会社設立のお知らせ">
-                            
-                            <span class="card-title">会社設立のお知らせ</span>
+        .nav-links a:hover { color: var(--primary); }
+
+        .nav-cta {
+            background: var(--dark) !important;
+            color: #fff !important;
+            padding: .5rem 1.375rem;
+            border-radius: 100px;
+            font-weight: 700 !important;
+            font-size: .855rem !important;
+            transition: background .2s, transform .15s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary) !important;
+            transform: translateY(-1px);
+            color: #fff !important;
+        }
+
+        .nav-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none;
+        }
+
+        .nav-hamburger span {
+            width: 24px; height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            display: block;
+        }
+
+        /* Mobile Drawer */
+        .nav-drawer { display: none; position: fixed; inset: 0; z-index: 999; }
+        .nav-drawer.open { display: block; }
+        .nav-drawer-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.5); }
+        .nav-drawer-panel {
+            position: absolute; top: 0; right: 0;
+            width: min(320px, 85vw); height: 100%;
+            background: var(--bg-white);
+            padding: 2rem; display: flex; flex-direction: column; gap: 1rem;
+        }
+        .nav-drawer-close {
+            align-self: flex-end; background: none; border: none;
+            font-size: 1.5rem; cursor: pointer; color: var(--text); margin-bottom: 1rem;
+        }
+        .nav-drawer-panel a {
+            display: block; font-size: 1rem; font-weight: 600; color: var(--text);
+            padding: .75rem 0; border-bottom: 1px solid var(--border); transition: color .2s;
+        }
+        .nav-drawer-panel a:hover { color: var(--primary); }
+
+        /* ── Hero ── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            /* Light cream-to-lavender gradient — like chekusu.com */
+            background: linear-gradient(140deg, #fafbff 0%, #f3eeff 50%, #fef4f9 100%);
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Subtle ambient blobs */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -160px; left: -160px;
+            width: 520px; height: 520px;
+            background: radial-gradient(circle, rgba(124,58,237,.07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -120px; right: -100px;
+            width: 440px; height: 440px;
+            background: radial-gradient(circle, rgba(236,72,153,.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        #net-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: calc(var(--nav-h) + 4rem) 2.5rem 5rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Left */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 7px; height: 7px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50%       { opacity: .3; transform: scale(1.7); }
+        }
+
+        .hero-title {
+            font-size: clamp(2.4rem, 4.5vw, 4rem);
+            font-weight: 900;
+            color: var(--dark);
+            line-height: 1.15;
+            letter-spacing: -.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title em {
+            font-style: normal;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-desc {
+            font-size: 1rem;
+            color: var(--text-light);
+            line-height: 1.9;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            max-width: 420px;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-dark {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: var(--dark);
+            color: #fff;
+            padding: .875rem 1.875rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: .95rem;
+            cursor: pointer;
+            transition: all .2s;
+            font-family: inherit;
+        }
+
+        .btn-dark:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(6,182,212,.32);
+        }
+
+        .btn-text-link {
+            font-size: .95rem;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: color .2s;
+            display: inline-flex;
+            align-items: center;
+            gap: .35rem;
+        }
+
+        .btn-text-link:hover { color: var(--primary); }
+
+        /* Right — dark mockup card */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-mockup {
+            width: 100%;
+            max-width: 460px;
+            background: var(--dark);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 24px 64px rgba(13,27,42,.18);
+        }
+
+        .mockup-bar {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+        }
+
+        .m-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .m-dot:nth-child(1) { background: #ff5f57; }
+        .m-dot:nth-child(2) { background: #ffbd2e; }
+        .m-dot:nth-child(3) { background: #28c840; }
+
+        .m-label {
+            margin-left: 6px;
+            font-size: .75rem;
+            color: rgba(255,255,255,.4);
+            font-family: 'Inter', monospace;
+        }
+
+        .m-cards { display: flex; flex-direction: column; gap: .75rem; }
+
+        .m-card {
+            background: rgba(255,255,255,.055);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 12px;
+            padding: 1rem 1.125rem;
+            display: flex;
+            align-items: center;
+            gap: .875rem;
+            transition: background .2s;
+        }
+
+        .m-card:hover { background: rgba(255,255,255,.09); }
+
+        .m-icon {
+            width: 42px; height: 42px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.25rem; flex-shrink: 0;
+        }
+
+        .m-text h4 { font-size: .85rem; font-weight: 700; color: #fff; margin-bottom: .2rem; }
+        .m-text p  { font-size: .74rem; color: rgba(255,255,255,.45); }
+
+        .m-tag {
+            margin-left: auto;
+            font-size: .68rem; font-weight: 700;
+            padding: .22rem .6rem; border-radius: 100px;
+            flex-shrink: 0; letter-spacing: .04em;
+        }
+
+        .t-tag-cyan   { background: rgba(6,182,212,.2);  color: var(--primary); }
+        .t-tag-purple { background: rgba(124,58,237,.2); color: #a78bfa; }
+        .t-tag-pink   { background: rgba(236,72,153,.2); color: #f9a8d4; }
+
+        /* ── Section commons ── */
+        .sec { padding: 6rem 2.5rem; }
+        .sec-inner { max-width: 1200px; margin: 0 auto; }
+
+        .sec-eyebrow {
+            text-align: center;
+            font-size: .74rem; font-weight: 800;
+            letter-spacing: .14em; color: var(--primary);
+            text-transform: uppercase; margin-bottom: .625rem;
+        }
+
+        .sec-title {
+            text-align: center;
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
+            font-weight: 900; color: var(--text);
+            line-height: 1.25; margin-bottom: .875rem;
+            letter-spacing: -.02em;
+        }
+
+        .sec-sub {
+            text-align: center;
+            color: var(--text-light); font-size: .975rem;
+            max-width: 580px; margin: 0 auto 3.5rem;
+            line-height: 1.85; font-weight: 300;
+        }
+
+        /* ── Philosophy ── */
+        .sec-philosophy { background: var(--bg-white); }
+
+        .phil-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+        }
+
+        .phil-card {
+            padding: 2.25rem 1.875rem;
+            border-radius: var(--r);
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            transition: transform .3s, box-shadow .3s, border-color .3s;
+        }
+
+        .phil-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .phil-icon {
+            width: 52px; height: 52px; border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.6rem; margin-bottom: 1.25rem;
+        }
+
+        .ic-cyan   { background: rgba(6,182,212,.12); }
+        .ic-purple { background: rgba(124,58,237,.12); }
+        .ic-pink   { background: rgba(236,72,153,.12); }
+
+        .phil-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .75rem; }
+        .phil-card p  { font-size: .875rem; color: var(--text-light); line-height: 1.85; }
+
+        /* ── Services ── */
+        .sec-services { background: var(--bg-alt); }
+
+        .svc-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .svc-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            padding: 1.875rem;
+            transition: transform .3s, box-shadow .3s, border-color .3s;
+            display: flex; flex-direction: column;
+        }
+
+        .svc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .svc-header {
+            display: flex; align-items: flex-start;
+            justify-content: space-between; margin-bottom: 1.125rem;
+        }
+
+        .svc-icon {
+            width: 46px; height: 46px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.4rem;
+        }
+
+        .svc-tag {
+            font-size: .68rem; font-weight: 700;
+            padding: .22rem .625rem; border-radius: 100px; letter-spacing: .05em;
+        }
+
+        .t-cyan   { background: rgba(6,182,212,.1);   color: var(--primary); }
+        .t-purple { background: rgba(124,58,237,.1);  color: var(--purple); }
+        .t-pink   { background: rgba(236,72,153,.1);  color: var(--pink); }
+
+        .svc-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .625rem; }
+        .svc-card p  { font-size: .85rem; color: var(--text-light); line-height: 1.8; flex: 1; margin-bottom: 1.25rem; }
+
+        .svc-link {
+            font-size: .83rem; font-weight: 700; color: var(--primary);
+            display: inline-flex; align-items: center; gap: .25rem; transition: gap .2s;
+        }
+
+        .svc-card:hover .svc-link { gap: .5rem; }
+
+        /* ── Strengths ── */
+        .sec-strengths { background: var(--bg-white); }
+
+        .str-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem; align-items: center;
+        }
+
+        .str-eyebrow { text-align: left; }
+        .str-title   { text-align: left; }
+        .str-sub     { text-align: left; margin-left: 0; }
+
+        .str-list { display: flex; flex-direction: column; gap: .875rem; margin-top: 2rem; }
+
+        .str-item {
+            display: flex; align-items: flex-start; gap: .875rem;
+            font-size: .925rem; color: var(--text); font-weight: 500;
+        }
+
+        .str-check {
+            width: 22px; height: 22px;
+            background: rgba(6,182,212,.1); color: var(--primary);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: .7rem; font-weight: 800; flex-shrink: 0; margin-top: 2px;
+        }
+
+        .company-card {
+            background: var(--dark); border-radius: 18px; padding: 2rem; color: #fff;
+        }
+
+        .company-card-eyebrow {
+            font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+            text-transform: uppercase; color: var(--primary); margin-bottom: .5rem;
+        }
+
+        .company-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: .25rem; }
+        .company-card .sub { font-size: .82rem; color: rgba(255,255,255,.45); margin-bottom: 1.5rem; }
+
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+        .stat-box {
+            background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.1);
+            border-radius: 12px; padding: 1.125rem 1.25rem;
+        }
+
+        .stat-num {
+            font-size: 2rem; font-weight: 900; color: var(--primary);
+            font-family: 'Inter', sans-serif; line-height: 1; margin-bottom: .375rem;
+        }
+
+        .stat-lbl { font-size: .78rem; color: rgba(255,255,255,.45); }
+
+        /* ── Contact ── */
+        .sec-contact { background: var(--bg-alt); }
+
+        .contact-box {
+            max-width: 640px; margin: 0 auto;
+            background: var(--bg-white); border-radius: 18px;
+            padding: 2.5rem; box-shadow: var(--shadow); border: 1px solid var(--border);
+        }
+
+        .form-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+        .fg { margin-bottom: 1.125rem; }
+
+        .fg label {
+            display: block; font-size: .85rem; font-weight: 600;
+            color: var(--text); margin-bottom: .45rem;
+        }
+
+        .fg label .req { color: #ef4444; margin-left: .2rem; font-size: .75rem; }
+
+        .fg input, .fg textarea {
+            width: 100%; padding: .75rem 1rem;
+            border: 1.5px solid var(--border); border-radius: 8px;
+            font-size: .925rem; font-family: inherit; color: var(--text);
+            background: var(--bg-white); outline: none;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+        .fg input:focus, .fg textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(6,182,212,.12);
+        }
+
+        .fg textarea { resize: vertical; min-height: 130px; }
+
+        .btn-send {
+            width: 100%; padding: .9rem;
+            background: var(--dark); color: #fff;
+            border: none; border-radius: 100px;
+            font-size: 1rem; font-weight: 700; font-family: inherit;
+            cursor: pointer; display: flex; align-items: center;
+            justify-content: center; gap: .5rem; margin-top: .375rem;
+            transition: background .2s, transform .15s, box-shadow .2s;
+        }
+
+        .btn-send:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(6,182,212,.35);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            background: var(--dark);
+            color: rgba(255,255,255,.55); padding: 4rem 2.5rem 2rem;
+        }
+
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 2rem;
+        }
+
+        .footer-brand img {
+            height: 30px; filter: brightness(0) invert(1);
+            opacity: .85; margin-bottom: 1rem;
+        }
+
+        .footer-brand p { font-size: .85rem; line-height: 1.85; color: rgba(255,255,255,.45); }
+
+        .footer-col h4 { font-size: .85rem; font-weight: 700; color: #fff; margin-bottom: 1rem; }
+        .footer-col ul { display: flex; flex-direction: column; gap: .6rem; }
+        .footer-col ul li a { font-size: .85rem; color: rgba(255,255,255,.45); transition: color .2s; }
+        .footer-col ul li a:hover { color: var(--primary); }
+
+        .footer-bottom {
+            display: flex; align-items: center; justify-content: space-between;
+            font-size: .78rem; color: rgba(255,255,255,.28);
+        }
+
+        /* ── Scroll animations ── */
+        .fade-up {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity .65s cubic-bezier(.16,1,.3,1), transform .65s cubic-bezier(.16,1,.3,1);
+        }
+
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: .1s; }
+        .delay-2 { transition-delay: .2s; }
+        .delay-3 { transition-delay: .3s; }
+        .delay-4 { transition-delay: .4s; }
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .svc-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            :root { --nav-h: 60px; }
+            .nav-links    { display: none; }
+            .nav-hamburger { display: flex; }
+            .sec { padding: 4rem 1.25rem; }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+                padding-bottom: 4rem;
+            }
+
+            .hero-visual { display: none; }
+            .hero-actions { flex-wrap: wrap; }
+
+            .phil-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+            .svc-grid  { grid-template-columns: 1fr; gap: 1.25rem; }
+            .str-grid  { grid-template-columns: 1fr; gap: 2.5rem; }
+
+            .str-eyebrow, .str-title, .str-sub { text-align: center; }
+            .str-sub { margin: 0 auto; }
+
+            .form-row2 { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 2rem; }
+            .btn-dark { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="株式会社蓋世技術">
+            <img src="/medias/logo_long.png" alt="株式会社蓋世技術">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/company">会社概要</a></li>
+            <li><a href="/business">事業内容</a></li>
+            <li><a href="/employment">採用情報</a></li>
+            <li><a href="/access">アクセス</a></li>
+            <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="drawer">
+    <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="nav-drawer-panel">
+        <button class="nav-drawer-close" id="drawerClose">✕</button>
+        <a href="/company"    onclick="closeDrawer()">会社概要</a>
+        <a href="/business"   onclick="closeDrawer()">事業内容</a>
+        <a href="/employment" onclick="closeDrawer()">採用情報</a>
+        <a href="/access"     onclick="closeDrawer()">アクセス</a>
+        <a href="#contact"    onclick="closeDrawer()" style="color:var(--primary);">お問い合わせ</a>
+    </div>
+</div>
+
+<!-- ── Hero ── -->
+<section class="hero" id="hero">
+    <canvas id="net-canvas"></canvas>
+
+    <div class="hero-inner">
+        <!-- Left: Text -->
+        <div class="hero-content">
+            <div class="hero-badge">IT &amp; AI ソリューション</div>
+            <h1 class="hero-title">
+                技術と品質の<br>
+                <em>共生開発会社</em>
+            </h1>
+            <p class="hero-desc">
+                お客様のビジョンと私たちの情熱が融合し、最高のITソリューションを実現します。システム開発・AI活用・クラウド構築まで、ワンストップでご対応します。
+            </p>
+            <div class="hero-actions">
+                <a href="/business" class="btn-dark">
+                    事業内容を見る &nbsp;→
+                </a>
+                <a href="#contact" class="btn-text-link">
+                    お問い合わせ
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Dark mockup card -->
+        <div class="hero-visual">
+            <div class="hero-mockup">
+                <div class="mockup-bar">
+                    <div class="m-dot"></div>
+                    <div class="m-dot"></div>
+                    <div class="m-dot"></div>
+                    <span class="m-label">Guysense Technology — Services</span>
+                </div>
+                <div class="m-cards">
+                    <div class="m-card">
+                        <div class="m-icon ic-cyan">💻</div>
+                        <div class="m-text">
+                            <h4>システム開発</h4>
+                            <p>高品質なソフトウェア設計・実装</p>
                         </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                拝啓　時下ますますご清祥のこととお慶び申し上げます。平素は格別のお引き立てを賜り厚く御礼申し上げます。
-かねてより準備してまいりました新会社をこの度東京都足立区に発足の運びとなりましたので謹んでお知らせ申し上げます。株式会社蓋世技術ではシス
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E4%BC%9A%E7%A4%BE/" class="post-category">
-                                    会社
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
+                        <span class="m-tag t-tag-cyan">Dev</span>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%A8%AD%E7%AB%8B/">
-                            <span class="chip bg-color">設立</span>
-                        </a>
-                        
+                    <div class="m-card">
+                        <div class="m-icon ic-purple">🤖</div>
+                        <div class="m-text">
+                            <h4>AI / 機械学習</h4>
+                            <p>最先端AI技術の業務活用</p>
+                        </div>
+                        <span class="m-tag t-tag-purple">AI</span>
                     </div>
-                    
+                    <div class="m-card">
+                        <div class="m-icon ic-pink">🌐</div>
+                        <div class="m-text">
+                            <h4>Webアプリ開発</h4>
+                            <p>スケーラブルなWeb / APIの構築</p>
+                        </div>
+                        <span class="m-tag t-tag-pink">Web</span>
+                    </div>
                 </div>
             </div>
-            
         </div>
-    </article>
+    </div>
+</section>
 
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2020-2021</span>
-            
-            <span id="year">2020</span>
-            <a href="/about" target="_blank">Guysense Technology</a>
-            |&nbsp;Powered by&nbsp;<a href="https://www.guysense.co.jp/" target="_blank">蓋世技術</a>
-            |<!--&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>-->
-            <br>
-            
-            
-            
-            
-            
-            <br>
-            
-            <br>
-            
+<!-- ── Philosophy ── -->
+<section class="sec sec-philosophy" id="philosophy">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">OUR PHILOSOPHY</p>
+        <h2 class="sec-title">テクノロジーで価値を創る</h2>
+        <p class="sec-sub">私たちは常にお客様の課題と向き合い、最適な技術と誠実な姿勢で最高の成果をお届けします。</p>
+        <div class="phil-grid">
+            <div class="phil-card fade-up">
+                <div class="phil-icon ic-cyan">💡</div>
+                <h3>高品質へのこだわり</h3>
+                <p>「飽きなく品質を追求する」を信念に、コードの一行一行に責任を持ち、妥協しない品質基準を貫きます。</p>
+            </div>
+            <div class="phil-card fade-up delay-1">
+                <div class="phil-icon ic-purple">🤝</div>
+                <h3>お客様との共創</h3>
+                <p>your vision, our passion. お客様のビジョンを深く理解し、共にプロジェクトを育て最高の成果を生み出します。</p>
+            </div>
+            <div class="phil-card fade-up delay-2">
+                <div class="phil-icon ic-pink">🚀</div>
+                <h3>最先端技術の活用</h3>
+                <p>AI・クラウド・最新フレームワークを積極的に採用し、時代のニーズに合ったソリューションを提供します。</p>
+            </div>
         </div>
-        <div class="col s12 m4 l4 social-link ">
+    </div>
+</section>
 
+<!-- ── Services ── -->
+<section class="sec sec-services" id="services">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">SERVICES</p>
+        <h2 class="sec-title">事業内容</h2>
+        <p class="sec-sub">幅広い技術領域で、お客様のビジネスに最適なソリューションをご提供します。</p>
+        <div class="svc-grid">
+            <div class="svc-card fade-up">
+                <div class="svc-header">
+                    <div class="svc-icon ic-cyan">⚙️</div>
+                    <span class="svc-tag t-cyan">Dev</span>
+                </div>
+                <h3>システム開発</h3>
+                <p>要件定義から設計・実装・テスト・運用保守まで、ワンストップでご対応。高品質なシステムをご提供します。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+            <div class="svc-card fade-up delay-1">
+                <div class="svc-header">
+                    <div class="svc-icon ic-purple">🤖</div>
+                    <span class="svc-tag t-purple">AI</span>
+                </div>
+                <h3>AI / 機械学習</h3>
+                <p>自然言語処理・画像認識・予測分析など、最先端のAI技術を活用し業務の自動化・効率化を実現します。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+            <div class="svc-card fade-up delay-2">
+                <div class="svc-header">
+                    <div class="svc-icon ic-pink">🌐</div>
+                    <span class="svc-tag t-pink">Web</span>
+                </div>
+                <h3>Webアプリ開発</h3>
+                <p>モダンフレームワークを用いたフロント・バックエンド開発。スケーラブルで保守性の高いWebサービスを構築します。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+            <div class="svc-card fade-up delay-1">
+                <div class="svc-header">
+                    <div class="svc-icon ic-cyan">☁️</div>
+                    <span class="svc-tag t-cyan">Cloud</span>
+                </div>
+                <h3>クラウドインフラ</h3>
+                <p>AWS・GCP・Azureを活用したアーキテクチャ設計・構築・運用。コスト最適化もサポートします。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+            <div class="svc-card fade-up delay-2">
+                <div class="svc-header">
+                    <div class="svc-icon ic-purple">📱</div>
+                    <span class="svc-tag t-purple">Mobile</span>
+                </div>
+                <h3>モバイルアプリ開発</h3>
+                <p>iOS・Androidアプリの企画・開発・リリース。React Native / Flutterによるクロスプラットフォーム開発にも対応。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+            <div class="svc-card fade-up delay-3">
+                <div class="svc-header">
+                    <div class="svc-icon ic-pink">💼</div>
+                    <span class="svc-tag t-pink">Consulting</span>
+                </div>
+                <h3>ITコンサルティング</h3>
+                <p>DX推進・技術選定・アーキテクチャレビューなど、貴社のIT戦略を技術的観点からサポートします。</p>
+                <a href="/business" class="svc-link">詳細を見る →</a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- ── Strengths ── -->
+<section class="sec sec-strengths" id="strengths">
+    <div class="sec-inner">
+        <div class="str-grid">
+            <div>
+                <p class="sec-eyebrow str-eyebrow">WHY GUYSENSE</p>
+                <h2 class="sec-title str-title">私たちを選ぶ理由</h2>
+                <p class="sec-sub str-sub">技術力・誠実さ・スピード。三つの強みでお客様のプロジェクトを成功へ導きます。</p>
+                <ul class="str-list">
+                    <li class="str-item fade-up">
+                        <span class="str-check">✓</span>設計段階から品質を意識したクリーンなアーキテクチャ
+                    </li>
+                    <li class="str-item fade-up delay-1">
+                        <span class="str-check">✓</span>アジャイル開発で素早いフィードバックサイクルを実現
+                    </li>
+                    <li class="str-item fade-up delay-2">
+                        <span class="str-check">✓</span>AI・クラウド・最新技術スタックへの深い知見
+                    </li>
+                    <li class="str-item fade-up delay-3">
+                        <span class="str-check">✓</span>丁寧なコミュニケーションと透明性の高いプロジェクト管理
+                    </li>
+                    <li class="str-item fade-up delay-4">
+                        <span class="str-check">✓</span>リリース後も安心の保守・サポート体制
+                    </li>
+                </ul>
+            </div>
+            <div class="fade-up delay-2">
+                <div class="company-card">
+                    <p class="company-card-eyebrow">Company Info</p>
+                    <h3>株式会社蓋世技術</h3>
+                    <p class="sub">Guysense Technology Co., Ltd.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-num">2020</div>
+                            <div class="stat-lbl">設立年</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-num">東京</div>
+                            <div class="stat-lbl">拠点：足立区</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-num">100<span style="font-size:1.1rem;font-weight:600">%</span></div>
+                            <div class="stat-lbl">品質へのこだわり</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-num">∞</div>
+                            <div class="stat-lbl">成長への情熱</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- ── Contact ── -->
+<section class="sec sec-contact" id="contact">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">CONTACT</p>
+        <h2 class="sec-title">お問い合わせ</h2>
+        <p class="sec-sub">プロジェクトのご相談・お見積りなど、お気軽にご連絡ください。</p>
+        <div class="contact-box fade-up">
+            <form>
+                <div class="form-row2">
+                    <div class="fg">
+                        <label>お名前<span class="req">*</span></label>
+                        <input type="text" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="fg">
+                        <label>会社名</label>
+                        <input type="text" placeholder="株式会社〇〇">
+                    </div>
+                </div>
+                <div class="fg">
+                    <label>メールアドレス<span class="req">*</span></label>
+                    <input type="email" placeholder="example@company.co.jp" required>
+                </div>
+                <div class="fg">
+                    <label>お問い合わせ内容<span class="req">*</span></label>
+                    <textarea placeholder="ご相談内容をお書きください..." required></textarea>
+                </div>
+                <button type="submit" class="btn-send">
+                    送信する &nbsp;→
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-</div>
+<!-- ── Footer ── -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="/medias/logo_long.png" alt="株式会社蓋世技術">
+                <p>飽きなく品質を追求する技術企業。<br>お客様のビジョンを最高の技術で実現します。<br>your vision, our passion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <ul>
+                    <li><a href="/company">会社概要</a></li>
+                    <li><a href="/business">事業内容</a></li>
+                    <li><a href="/employment">採用情報</a></li>
+                    <li><a href="/access">アクセス</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>お問い合わせ</h4>
+                <ul>
+                    <li><a href="mailto:info@guysense.co.jp">info@guysense.co.jp</a></li>
+                    <li><a href="/access">〒 東京都足立区千住1-4-1</a></li>
+                    <li><a href="/access">アクセスマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2020–2025 株式会社蓋世技術 All Rights Reserved.</span>
+            <span>Guysense Technology Co., Ltd.</span>
+        </div>
     </div>
 </footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;検索</span>
-            <input type="search" id="searchInput" name="s" placeholder="キーワードを入力ください"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
 <script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+/* ── Network canvas (pastel dots + connecting lines) ── */
+(function () {
+    const canvas = document.getElementById('net-canvas');
+    const hero   = document.getElementById('hero');
+    const ctx    = canvas.getContext('2d');
+
+    /* Pastel dot colors — like chekusu.com */
+    const COLORS = [
+        '#06b6d4', '#7c3aed', '#ec4899',
+        '#f59e0b', '#10b981', '#a78bfa',
+        '#fb923c', '#38bdf8'
+    ];
+
+    const COUNT     = 52;
+    const LINE_DIST = 130;   /* px — max distance to draw a line */
+    const LINE_ALPHA = 0.18; /* line opacity */
+
+    let W, H, pts;
+
+    function resize() {
+        W = canvas.width  = hero.offsetWidth;
+        H = canvas.height = hero.offsetHeight;
+    }
+
+    function rand(a, b) { return Math.random() * (b - a) + a; }
+
+    function mkPt() {
+        return {
+            x:  rand(0, W),
+            y:  rand(0, H),
+            r:  rand(3, 7),
+            vx: rand(-.18, .18),
+            vy: rand(-.18, .18),
+            a:  rand(.4, .85),
+            color: COLORS[Math.floor(Math.random() * COLORS.length)]
+        };
+    }
+
+    function init() {
+        resize();
+        pts = Array.from({ length: COUNT }, mkPt);
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        /* Draw connecting lines */
+        for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[i].x - pts[j].x;
+                const dy = pts[i].y - pts[j].y;
+                const d  = Math.sqrt(dx * dx + dy * dy);
+                if (d < LINE_DIST) {
+                    ctx.beginPath();
+                    ctx.moveTo(pts[i].x, pts[i].y);
+                    ctx.lineTo(pts[j].x, pts[j].y);
+                    ctx.strokeStyle = `rgba(150,150,180,${LINE_ALPHA * (1 - d / LINE_DIST)})`;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
         }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
+
+        /* Draw dots */
+        pts.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < -10) p.x = W + 10;
+            if (p.x > W + 10) p.x = -10;
+            if (p.y < -10) p.y = H + 10;
+            if (p.y > H + 10) p.y = -10;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.globalAlpha = p.a;
+            ctx.fill();
+        });
+
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize);
+    init();
+    draw();
+})();
+
+/* ── Navbar scroll ── */
+(function () {
+    const nav = document.getElementById('nav');
+    /* Hero is light, so scrolled class just adds subtle shadow */
+    function onScroll() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+})();
+
+/* ── Mobile drawer ── */
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+document.getElementById('hamburger').addEventListener('click', function () { document.getElementById('drawer').classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
+
+/* ── Scroll fade-up ── */
+(function () {
+    const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(function (el) { io.observe(el); });
+})();
 </script>
-
-    
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
-
 </html>

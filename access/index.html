@@ -1,626 +1,326 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="アクセス, 株式会社蓋世技術">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社蓋世技術へのアクセス。東京都足立区千住1-4-1 東京芸術センター10階。北千住駅より徒歩5〜7分。">
     <title>アクセス | 株式会社蓋世技術</title>
     <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+    <style>
+        .access-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .map-embed {
+            border-radius: var(--r);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-lg);
+        }
+        .map-embed iframe {
+            width: 100%;
+            height: 420px;
+            display: block;
+            border: none;
+        }
+        .access-info-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .access-info-header {
+            background: var(--hero-bg);
+            padding: 1.5rem;
+            color: #fff;
+        }
+        .access-info-header p {
+            font-size: .72rem; font-weight: 700;
+            letter-spacing: .1em; text-transform: uppercase;
+            color: var(--primary); margin-bottom: .375rem;
+        }
+        .access-info-header h3 {
+            font-size: 1.1rem; font-weight: 700;
+        }
+        .access-row {
+            padding: 1.1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .access-row:last-child { border-bottom: none; }
+        .access-row-icon {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: .1rem;
+        }
+        .access-row-text h4 {
+            font-size: .82rem; font-weight: 700;
+            color: var(--text-muted); letter-spacing: .06em;
+            text-transform: uppercase; margin-bottom: .375rem;
+        }
+        .access-row-text p {
+            font-size: .875rem; color: var(--text); line-height: 1.75;
+        }
+        .transit-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .transit-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: border-color .3s, box-shadow .3s;
+        }
+        .transit-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+        .transit-icon {
+            width: 42px; height: 42px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.25rem; flex-shrink: 0;
+        }
+        .transit-card h4 { font-size: .875rem; font-weight: 700; margin-bottom: .375rem; }
+        .transit-card p  { font-size: .83rem; color: var(--text-light); line-height: 1.7; }
+        .map-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: var(--primary);
+            color: #fff;
+            padding: .75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: .9rem;
+            transition: background .2s, transform .15s;
+            margin-top: 1.25rem;
+        }
+        .map-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        @media (max-width: 900px) {
+            .access-grid { grid-template-columns: 1fr; }
+            .map-embed iframe { height: 300px; }
+        }
+    </style>
+</head>
 <body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo_long.png" class="logo-img" alt="LOGO">
-                    
-                    <!--span-- class="logo-span">株式会社蓋世技術</!--span-->
-                    <span class="logo-span"></span>                </a>
-            </div>
-            
 
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/company" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>会社概要</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/business" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>事業内容</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/employment" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>採用情報</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/access" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>アクセス</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="検索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo_long.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name"><!--%= config.title %--><br/></div>
-        <div class="logo-desc">
-            
-            your vision, our passion.
-            
-        </div>
+<!-- ── Nav ── -->
+<nav class="nav nav-solid" id="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo"><img src="/medias/logo_long.png" alt="株式会社蓋世技術"></a>
+        <ul class="nav-links">
+            <li><a href="/company">会社概要</a></li>
+            <li><a href="/business">事業内容</a></li>
+            <li><a href="/employment">採用情報</a></li>
+            <li><a href="/access" style="color:var(--primary)!important;font-weight:700;">アクセス</a></li>
+            <li><a href="/#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
+</nav>
 
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/company" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			会社概要
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/business" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			事業内容
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/employment" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			採用情報
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/access" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			アクセス
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/access.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">アクセス</h1>
-                </div>
-            </div>
-        </div>
+<div class="nav-drawer" id="drawer">
+    <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="nav-drawer-panel">
+        <button class="nav-drawer-close" id="drawerClose">✕</button>
+        <a href="/company"    onclick="closeDrawer()">会社概要</a>
+        <a href="/business"   onclick="closeDrawer()">事業内容</a>
+        <a href="/employment" onclick="closeDrawer()">採用情報</a>
+        <a href="/access"     onclick="closeDrawer()" style="color:var(--primary);">アクセス</a>
+        <a href="/#contact"   onclick="closeDrawer()" style="color:var(--primary);">お問い合わせ</a>
     </div>
 </div>
 
+<!-- ── Page Hero ── -->
+<section class="page-hero">
+    <div class="page-hero-inner">
+        <nav class="breadcrumb">
+            <a href="/">ホーム</a>
+            <span>›</span>
+            <span style="color:rgba(255,255,255,.7);">アクセス</span>
+        </nav>
+        <p>北千住駅から徒歩5〜7分。東京都足立区千住にオフィスを構えています。</p>
+    </div>
+</section>
 
+<!-- ── Map + Info ── -->
+<section class="sec" style="background:var(--bg-alt);">
+    <div class="sec-inner">
+        <div class="access-grid">
 
-
-<main class="container content">
-
-    
-    <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                          <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
-                          </div>
-                    
+            <!-- Map -->
+            <div class="fade-up">
+                <p class="sec-eyebrow" style="margin-bottom:.5rem;">Location</p>
+                <h2 class="sec-title" style="margin-bottom:1rem;">所在地マップ</h2>
+                <div class="map-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808.8!2d139.80025!3d35.74787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018915b9b8a647b%3A0x19d29cdabfcb8e1c!2z5p2x5Lqs6Iqx5pa55Y2X44K744Oz44K_!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="株式会社蓋世技術 地図"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="col s5 right-align">
-                    
-                </div>
+                <a href="https://goo.gl/maps/JfQoSfUMBzYZ2HpF8" target="_blank" rel="noopener" class="map-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Google Maps で開く
+                </a>
             </div>
 
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>公開日:&nbsp;&nbsp;
-                    2020-12-12
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h2 id="本社"><a href="#本社" class="headerlink" title="本社"></a>本社</h2><p>〒120-0034<br>東京都足立区千住1-4-1 東京芸術センター10階</p>
-<h2 id="鉄道"><a href="#鉄道" class="headerlink" title="鉄道"></a>鉄道</h2><ul>
-<li>東京メトロ千代田線「北千住駅」1番出口から徒歩５分。</li>
-<li>ＪＲ常磐線、つくばエクスプレス、東武伊勢崎線東京メトロ日比谷線「北千住駅」出口１、西口から徒歩７分。</li>
-</ul>
-<h2 id="徒歩"><a href="#徒歩" class="headerlink" title="徒歩"></a>徒歩</h2><p>徒歩で北千住駅から東京芸術センターまでの経路-徒歩7分（700m）<br>GoogleMapリンク(<a target="_blank" rel="noopener" href="https://goo.gl/maps/JfQoSfUMBzYZ2HpF8">https://goo.gl/maps/JfQoSfUMBzYZ2HpF8</a>)</p>
-<p><img src="/img/map.png" alt=""></p>
-
-                
-            </div>
-            <hr/>
-
-            
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
+            <!-- Info -->
+            <div class="fade-up delay-1">
+                <p class="sec-eyebrow" style="margin-bottom:.5rem;">Address</p>
+                <h2 class="sec-title" style="margin-bottom:1.25rem;">住所・連絡先</h2>
+                <div class="access-info-card">
+                    <div class="access-info-header">
+                        <p>Head Office</p>
+                        <h3>株式会社蓋世技術 本社</h3>
+                    </div>
+                    <div class="access-row">
+                        <div class="access-row-icon">📍</div>
+                        <div class="access-row-text">
+                            <h4>住所</h4>
+                            <p>〒120-0034<br>東京都足立区千住1-4-1<br>東京芸術センター 10階</p>
                         </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-
-    
-
-</div>
-
+                    </div>
+                    <div class="access-row">
+                        <div class="access-row-icon">📞</div>
+                        <div class="access-row-text">
+                            <h4>電話番号</h4>
+                            <p><a href="tel:0506862-9985" style="color:var(--primary);font-weight:600;">050-6862-9985</a></p>
+                        </div>
+                    </div>
+                    <div class="access-row">
+                        <div class="access-row-icon">✉️</div>
+                        <div class="access-row-text">
+                            <h4>メールアドレス</h4>
+                            <p><a href="mailto:info@guysense.co.jp" style="color:var(--primary);font-weight:600;">info@guysense.co.jp</a></p>
+                        </div>
+                    </div>
+                    <div class="access-row">
+                        <div class="access-row-icon">🕘</div>
+                        <div class="access-row-text">
+                            <h4>営業時間</h4>
+                            <p>9:00〜17:30（平日）</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
+</section>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本編
-            </div>
-            <div class="card">
-                <a href="/access/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/access.jpg" class="responsive-img" alt="アクセス">
-                        
-                        <span class="card-title">アクセス</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
+<!-- ── Transit ── -->
+<section class="sec" style="background:var(--bg-white);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">How to Get Here</p>
+        <h2 class="sec-title">交通アクセス</h2>
+        <div class="sec-divider"></div>
+        <div class="transit-cards">
+            <div class="transit-card fade-up">
+                <div class="transit-icon ic-cyan">🚇</div>
+                <div>
+                    <h4>東京メトロ 千代田線</h4>
+                    <p>「<strong>北千住駅</strong>」1番出口より <strong>徒歩5分</strong></p>
                 </div>
-
-                
+            </div>
+            <div class="transit-card fade-up delay-1">
+                <div class="transit-icon ic-purple">🚆</div>
+                <div>
+                    <h4>JR常磐線 / つくばエクスプレス / 東武伊勢崎線 / 東京メトロ日比谷線</h4>
+                    <p>「<strong>北千住駅</strong>」出口1・西口より <strong>徒歩7分</strong></p>
+                </div>
+            </div>
+            <div class="transit-card fade-up delay-2">
+                <div class="transit-icon ic-pink">🚶</div>
+                <div>
+                    <h4>徒歩ルート</h4>
+                    <p>北千住駅から東京芸術センターまで <strong>約700m・徒歩7分</strong></p>
+                </div>
             </div>
         </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本編&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/access/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/access.jpg" class="responsive-img" alt="アクセス">
-                        
-                        <span class="card-title">アクセス</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
-                </div>
 
-                
-            </div>
+        <!-- Map image fallback -->
+        <div style="margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);" class="fade-up delay-3">
+            <img src="/img/map.png" alt="アクセスマップ" style="width:100%;display:block;">
         </div>
-        
     </div>
-</article>
+</section>
 
+<!-- ── CTA ── -->
+<div class="cta-strip">
+    <h2>ご来社・お問い合わせ</h2>
+    <p>ご来社の前にお気軽にお電話またはメールにてご連絡ください。</p>
+    <a href="/#contact" class="btn-primary">
+        お問い合わせ
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
 </div>
 
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2020-2021</span>
-            
-            <span id="year">2020</span>
-            <a href="/about" target="_blank">Guysense Technology</a>
-            |&nbsp;Powered by&nbsp;<a href="https://www.guysense.co.jp/" target="_blank">蓋世技術</a>
-            |<!--&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>-->
-            <br>
-            
-            
-            
-            
-            
-            <br>
-            
-            <br>
-            
+<!-- ── Footer ── -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="/medias/logo_long.png" alt="株式会社蓋世技術">
+                <p>飽きなく品質を追求する技術企業。<br>your vision, our passion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <ul>
+                    <li><a href="/company">会社概要</a></li>
+                    <li><a href="/business">事業内容</a></li>
+                    <li><a href="/employment">採用情報</a></li>
+                    <li><a href="/access">アクセス</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>お問い合わせ</h4>
+                <ul>
+                    <li><a href="tel:050-6862-9985">050-6862-9985</a></li>
+                    <li><a href="mailto:info@guysense.co.jp">info@guysense.co.jp</a></li>
+                    <li><span>〒 東京都足立区千住1-4-1</span></li>
+                </ul>
+            </div>
         </div>
-        <div class="col s12 m4 l4 social-link ">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+        <div class="footer-bottom">
+            <span>© 2020–2025 株式会社蓋世技術 All Rights Reserved.</span>
+            <span>Guysense Technology Co., Ltd.</span>
+        </div>
     </div>
 </footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;検索</span>
-            <input type="search" id="searchInput" name="s" placeholder="キーワードを入力ください"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
 <script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+document.getElementById('hamburger').addEventListener('click', function() { document.getElementById('drawer').classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
+(function() {
+    var els = document.querySelectorAll('.fade-up');
+    var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(function(el) { io.observe(el); });
+})();
 </script>
-
-    
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
-
 </html>

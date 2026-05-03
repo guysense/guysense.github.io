@@ -1,822 +1,327 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="事業内容, 株式会社蓋世技術">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社蓋世技術の事業内容。SES・受託開発・コンサルティング・システム開発・運用保守など幅広くご対応します。">
     <title>事業内容 | 株式会社蓋世技術</title>
     <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+    <style>
+        .svc-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            padding: 2rem;
+            transition: transform .3s, box-shadow .3s, border-color .3s;
+        }
+        .svc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+        .svc-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .75rem; }
+        .svc-card p  { font-size: .875rem; color: var(--text-light); line-height: 1.85; }
+        .svc-card ul {
+            list-style: none; margin-top: .875rem;
+            display: flex; flex-direction: column; gap: .4rem;
+        }
+        .svc-card ul li {
+            font-size: .845rem; color: var(--text-light);
+            display: flex; align-items: flex-start; gap: .5rem;
+        }
+        .svc-card ul li::before {
+            content: '·'; color: var(--primary);
+            font-weight: 900; flex-shrink: 0;
+        }
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .industry-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            padding: 1.25rem 1rem;
+            text-align: center;
+            transition: border-color .3s, box-shadow .3s;
+        }
+        .industry-item:hover { border-color: var(--primary); box-shadow: var(--shadow); }
+        .industry-item .icon { font-size: 1.75rem; margin-bottom: .625rem; }
+        .industry-item p { font-size: .82rem; font-weight: 600; color: var(--text); }
+        @media (max-width: 768px) {
+            .industry-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
 <body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo_long.png" class="logo-img" alt="LOGO">
-                    
-                    <!--span-- class="logo-span">株式会社蓋世技術</!--span-->
-                    <span class="logo-span"></span>                </a>
-            </div>
-            
 
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/company" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>会社概要</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/business" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>事業内容</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/employment" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>採用情報</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/access" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>アクセス</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="検索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo_long.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name"><!--%= config.title %--><br/></div>
-        <div class="logo-desc">
-            
-            your vision, our passion.
-            
-        </div>
+<!-- ── Nav ── -->
+<nav class="nav nav-solid" id="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo"><img src="/medias/logo_long.png" alt="株式会社蓋世技術"></a>
+        <ul class="nav-links">
+            <li><a href="/company">会社概要</a></li>
+            <li><a href="/business" style="color:var(--primary)!important;font-weight:700;">事業内容</a></li>
+            <li><a href="/employment">採用情報</a></li>
+            <li><a href="/access">アクセス</a></li>
+            <li><a href="/#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
+</nav>
 
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/company" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			会社概要
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/business" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			事業内容
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/employment" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			採用情報
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/access" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			アクセス
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/business.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">事業内容</h1>
-                </div>
-            </div>
-        </div>
+<div class="nav-drawer" id="drawer">
+    <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="nav-drawer-panel">
+        <button class="nav-drawer-close" id="drawerClose">✕</button>
+        <a href="/company"    onclick="closeDrawer()">会社概要</a>
+        <a href="/business"   onclick="closeDrawer()" style="color:var(--primary);">事業内容</a>
+        <a href="/employment" onclick="closeDrawer()">採用情報</a>
+        <a href="/access"     onclick="closeDrawer()">アクセス</a>
+        <a href="/#contact"   onclick="closeDrawer()" style="color:var(--primary);">お問い合わせ</a>
     </div>
 </div>
 
+<!-- ── Page Hero ── -->
+<section class="page-hero">
+    <div class="page-hero-inner">
+        <nav class="breadcrumb">
+            <a href="/">ホーム</a>
+            <span>›</span>
+            <span style="color:rgba(255,255,255,.7);">事業内容</span>
+        </nav>
+        <p>幅広い技術領域で、お客様のビジネスに最適なソリューションをご提供します。</p>
+    </div>
+</section>
 
+<!-- ── Main Services ── -->
+<section class="sec" style="background:var(--bg-alt);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">Core Services</p>
+        <h2 class="sec-title">主要事業</h2>
+        <div class="sec-divider"></div>
+        <div class="card-grid card-grid-2">
 
-
-<main class="post-container content">
-
-    
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                          <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
-                          </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                </div>
+            <div class="svc-card fade-up">
+                <div class="g-card-icon ic-cyan" style="width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1rem;">👥</div>
+                <span class="tag t-cyan">SES</span>
+                <h3>ビジネスSES事業</h3>
+                <p>蓄積された技術及びシステム運用経験を活かし、顧客システムの企画・開発・運用・戦略確立・BPRなど全般的な情報システムサービスを提供します。</p>
+                <ul>
+                    <li>システムの企画・要件定義</li>
+                    <li>開発・実装・テスト</li>
+                    <li>運用・保守・監視</li>
+                    <li>BPR（業務プロセス改革）支援</li>
+                </ul>
             </div>
 
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>公開日:&nbsp;&nbsp;
-                    2020-12-12
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
+            <div class="svc-card fade-up delay-1">
+                <div class="g-card-icon ic-purple" style="width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1rem;">⚙️</div>
+                <span class="tag t-purple">SI</span>
+                <h3>受託開発</h3>
+                <p>豊富な人材で様々な業務に精通したシステムエンジニアでプロジェクトチームを構成し、要件定義からサービス開始まで責任をもって担当します。</p>
+                <ul>
+                    <li>要件定義 → 設計 → 実装 → テスト → リリース</li>
+                    <li>金融・証券・公共等のシステム開発</li>
+                    <li>Webアプリ・モバイルアプリ開発</li>
+                    <li>品質保証・ドキュメント整備</li>
+                </ul>
             </div>
-        </div>
-        <hr class="clearfix">
 
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h2 id="ビジネスSES事業"><a href="#ビジネスSES事業" class="headerlink" title="ビジネスSES事業"></a>ビジネスSES事業</h2><ul>
-<li>蓄積された技術及びシステム運用経験を活かし顧客システムの企画、開発、運用、戦略確立、BPRなど全般的な情報システムサービス提供します。</li>
-</ul>
-<h2 id="受託開発"><a href="#受託開発" class="headerlink" title="受託開発"></a>受託開発</h2><ul>
-<li>豊富な人材で様々な業務に精通したシステムエンジニアでプロジェクトチームに構成し、要件定義からサービス開始まで責任をもって担当します.</li>
-<li>金融・証券・公共等のシステムまで幅広く対応します。</li>
-</ul>
-<h2 id="コンサルティング事業"><a href="#コンサルティング事業" class="headerlink" title="コンサルティング事業"></a>コンサルティング事業</h2><ul>
-<li>ウェブゲーム、ネイティブゲーム、動画配信サビース、金融・医療・公共・流通等にITコンサルティングサービスを提供します。</li>
-<li>ビジネスに変革をもたらすIT戦略を策定するとともに、ITがその効果を発揮するまで、徹底して実現にこだわったコンサルティングサービスを提供します。</li>
-</ul>
-<h2 id="システム開発・運用保守"><a href="#システム開発・運用保守" class="headerlink" title="システム開発・運用保守"></a>システム開発・運用保守</h2><ul>
-<li>流通業、金融業、サービス業、製造業、公共、社会インフラなど、あらゆるニーズに、お客様が抱えている課題を徹底的に分析する。</li>
-<li>コンサルティング、開発、システム構築から運用保守まで充実した体制で高品質かつ安定的なトータルソリューションをご提供いたします。</li>
-</ul>
-
-                
+            <div class="svc-card fade-up delay-1">
+                <div class="g-card-icon ic-pink" style="width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1rem;">💼</div>
+                <span class="tag t-pink">Consulting</span>
+                <h3>コンサルティング事業</h3>
+                <p>ビジネスに変革をもたらすIT戦略を策定するとともに、ITがその効果を発揮するまで徹底して実現にこだわったコンサルティングサービスを提供します。</p>
+                <ul>
+                    <li>IT戦略・DX推進支援</li>
+                    <li>金融・医療・公共・流通向けITコンサル</li>
+                    <li>ウェブゲーム・動画配信サービス支援</li>
+                    <li>技術選定・アーキテクチャレビュー</li>
+                </ul>
             </div>
-            <hr/>
 
-            
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            <span class="chip bg-color">タグなし</span>
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-
-    
-
-</div>
-
-                </div>
+            <div class="svc-card fade-up delay-2">
+                <div class="g-card-icon ic-cyan" style="width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1rem;">🔧</div>
+                <span class="tag t-cyan">Dev &amp; Ops</span>
+                <h3>システム開発・運用保守</h3>
+                <p>流通業・金融業・サービス業・製造業・公共・社会インフラなど、あらゆるニーズにコンサルから開発・運用保守まで充実した体制でご提供します。</p>
+                <ul>
+                    <li>要件分析・課題の徹底的な解決</li>
+                    <li>高品質かつ安定的なトータルソリューション</li>
+                    <li>24/7 運用監視・障害対応</li>
+                    <li>パフォーマンスチューニング・最適化</li>
+                </ul>
             </div>
-            
+
         </div>
     </div>
+</section>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本編
-            </div>
-            <div class="card">
-                <a href="/business/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/business.jpg" class="responsive-img" alt="事業内容">
-                        
-                        <span class="card-title">事業内容</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
+<!-- ── Tech Stack ── -->
+<section class="sec" style="background:var(--bg-white);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">Technology</p>
+        <h2 class="sec-title">技術スタック</h2>
+        <div class="sec-divider"></div>
+        <div class="card-grid card-grid-3">
+            <div class="g-card fade-up">
+                <div class="g-card-icon ic-cyan">🖥️</div>
+                <span class="tag t-cyan">Frontend</span>
+                <h3>フロントエンド</h3>
+                <div class="badge-row">
+                    <span class="badge">React</span>
+                    <span class="badge">Vue.js</span>
+                    <span class="badge">Angular</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">HTML / CSS</span>
+                    <span class="badge">JavaScript</span>
                 </div>
-
-                
             </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本編&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/business/index.html">
-                    <div class="card-image">
-                        
-                        <img src="/images/business.jpg" class="responsive-img" alt="事業内容">
-                        
-                        <span class="card-title">事業内容</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Guysense Technology
-                            
-                        </span>
-                    </div>
+            <div class="g-card fade-up delay-1">
+                <div class="g-card-icon ic-purple">⚡</div>
+                <span class="tag t-purple">Backend</span>
+                <h3>バックエンド</h3>
+                <div class="badge-row">
+                    <span class="badge">Java</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">PHP</span>
+                    <span class="badge">Ruby</span>
+                    <span class="badge">C# / .NET</span>
+                    <span class="badge">Node.js</span>
                 </div>
-
-                
+            </div>
+            <div class="g-card fade-up delay-2">
+                <div class="g-card-icon ic-pink">🗄️</div>
+                <span class="tag t-pink">Database</span>
+                <h3>データベース</h3>
+                <div class="badge-row">
+                    <span class="badge">Oracle</span>
+                    <span class="badge">MySQL</span>
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">SQL Server</span>
+                    <span class="badge">MongoDB</span>
+                    <span class="badge">Redis</span>
+                </div>
+            </div>
+            <div class="g-card fade-up delay-1">
+                <div class="g-card-icon ic-cyan">☁️</div>
+                <span class="tag t-cyan">Cloud</span>
+                <h3>クラウド</h3>
+                <div class="badge-row">
+                    <span class="badge">AWS</span>
+                    <span class="badge">GCP</span>
+                    <span class="badge">Azure</span>
+                    <span class="badge">Docker</span>
+                    <span class="badge">Kubernetes</span>
+                </div>
+            </div>
+            <div class="g-card fade-up delay-2">
+                <div class="g-card-icon ic-purple">📱</div>
+                <span class="tag t-purple">Mobile</span>
+                <h3>モバイル</h3>
+                <div class="badge-row">
+                    <span class="badge">iOS</span>
+                    <span class="badge">Android</span>
+                    <span class="badge">Unity</span>
+                    <span class="badge">React Native</span>
+                    <span class="badge">Flutter</span>
+                </div>
+            </div>
+            <div class="g-card fade-up delay-3">
+                <div class="g-card-icon ic-pink">🤖</div>
+                <span class="tag t-pink">AI / ML</span>
+                <h3>AI・機械学習</h3>
+                <div class="badge-row">
+                    <span class="badge">Python</span>
+                    <span class="badge">TensorFlow</span>
+                    <span class="badge">PyTorch</span>
+                    <span class="badge">OpenAI API</span>
+                    <span class="badge">LLM</span>
+                </div>
             </div>
         </div>
-        
     </div>
-</article>
+</section>
 
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目次</div>
-            <div id="toc-content"></div>
+<!-- ── Industries ── -->
+<section class="sec" style="background:var(--bg-alt);">
+    <div class="sec-inner">
+        <p class="sec-eyebrow">Industries</p>
+        <h2 class="sec-title">対応業界</h2>
+        <div class="sec-divider"></div>
+        <div class="industry-grid">
+            <div class="industry-item fade-up"><div class="icon">🏦</div><p>金融・証券</p></div>
+            <div class="industry-item fade-up delay-1"><div class="icon">🏥</div><p>医療・ヘルスケア</p></div>
+            <div class="industry-item fade-up delay-2"><div class="icon">🏛️</div><p>公共・行政</p></div>
+            <div class="industry-item fade-up delay-3"><div class="icon">🛒</div><p>流通・EC</p></div>
+            <div class="industry-item fade-up"><div class="icon">🏭</div><p>製造業</p></div>
+            <div class="industry-item fade-up delay-1"><div class="icon">🎮</div><p>ゲーム・エンタメ</p></div>
+            <div class="industry-item fade-up delay-2"><div class="icon">📡</div><p>情報通信</p></div>
+            <div class="industry-item fade-up delay-3"><div class="icon">🚇</div><p>社会インフラ</p></div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
+<!-- ── CTA ── -->
+<div class="cta-strip">
+    <h2>プロジェクトのご相談はこちら</h2>
+    <p>どんな案件でもまずはお気軽にご連絡ください。</p>
+    <a href="/#contact" class="btn-primary">
+        お問い合わせ
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
 </div>
 
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('3'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2020-2021</span>
-            
-            <span id="year">2020</span>
-            <a href="/about" target="_blank">Guysense Technology</a>
-            |&nbsp;Powered by&nbsp;<a href="https://www.guysense.co.jp/" target="_blank">蓋世技術</a>
-            |<!--&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>-->
-            <br>
-            
-            
-            
-            
-            
-            <br>
-            
-            <br>
-            
+<!-- ── Footer ── -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="/medias/logo_long.png" alt="株式会社蓋世技術">
+                <p>飽きなく品質を追求する技術企業。<br>your vision, our passion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <ul>
+                    <li><a href="/company">会社概要</a></li>
+                    <li><a href="/business">事業内容</a></li>
+                    <li><a href="/employment">採用情報</a></li>
+                    <li><a href="/access">アクセス</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>お問い合わせ</h4>
+                <ul>
+                    <li><a href="mailto:info@guysense.co.jp">info@guysense.co.jp</a></li>
+                    <li><a href="/access">〒 東京都足立区千住1-4-1</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col s12 m4 l4 social-link ">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+        <div class="footer-bottom">
+            <span>© 2020–2025 株式会社蓋世技術 All Rights Reserved.</span>
+            <span>Guysense Technology Co., Ltd.</span>
+        </div>
     </div>
 </footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;検索</span>
-            <input type="search" id="searchInput" name="s" placeholder="キーワードを入力ください"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
 <script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+document.getElementById('hamburger').addEventListener('click', function() { document.getElementById('drawer').classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
+(function() {
+    var els = document.querySelectorAll('.fade-up');
+    var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(function(el) { io.observe(el); });
+})();
 </script>
-
-    
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
-
 </html>
